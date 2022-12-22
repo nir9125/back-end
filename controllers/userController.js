@@ -1,5 +1,5 @@
 const User = require("../models/users");
-const cookieToken = require("../util/cookieToken");
+const cookieToken = require("../util/CookieToken");
 
 exports.signup = async (req, res) => {
   console.log(req.body);

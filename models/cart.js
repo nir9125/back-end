@@ -17,6 +17,10 @@ const cartSchema = new mongoose.Schema({
         type: String,
         required: [true, "Please provide name of the product"],
       },
+      img:{
+        type:String
+      }
+      ,
       desc: {
         type: String,
         required: [true, "Please provide desc of the product"],

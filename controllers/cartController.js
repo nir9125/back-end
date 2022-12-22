@@ -1,9 +1,9 @@
 const Cart = require("../models/cart");
 
 exports.add = async (req, res) => {
-  const { id, name, desc, quantity, price } = req.body;
-
-  if (!id || !name || !desc || !quantity || !price) {
+  const { id, name,img, desc, quantity, price } = req.body;
+  console.log(req.body);
+  if (!id || !name || !desc || !quantity || !price||!img) {
     res.status(400).json({
       message: "All fields are required",
     });

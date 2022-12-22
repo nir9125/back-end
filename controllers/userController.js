@@ -14,6 +14,7 @@ exports.signup = async (req, res) => {
   const user = await User.create(req.body);
 
   cookieToken(user, res);
+  return res.status(200).json("You have Sucessfully registered.");
 };
 
 exports.login = async (req, res) => {
